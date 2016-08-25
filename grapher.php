@@ -1,7 +1,8 @@
 <?php
-require_once dirname(__FILE__).'/include/config.inc.php';
-require_once dirname(__FILE__).'/include/hosts.inc.php';
-require_once dirname(__FILE__).'/include/graphs.inc.php';
+
+require_once 'include/config.inc.php';
+require_once 'include/hosts.inc.php';
+require_once 'include/graphs.inc.php';
 
 $page['title'] = _('Grapher');
 $page['hist_arg'] = array('hostid', 'groupid', 'graphid');
@@ -12,7 +13,7 @@ define('ZBX_PAGE_DO_JS_REFRESH', 1);
 
 ob_start();
 
-require_once dirname(__FILE__).'/include/page_header.php';
+require_once 'include/page_header.php';
 
 ob_end_flush();
 
@@ -47,4 +48,4 @@ ob_end_flush();
 <div id="pics"></div>
 
 <?
-require_once dirname(__FILE__).'/include/page_footer.php';
+require_once 'include/page_footer.php';
